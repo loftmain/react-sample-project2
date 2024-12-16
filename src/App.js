@@ -7,19 +7,19 @@ import TodoList from './component/TodoList';
 const mockTodo  = [
   {
     id: 0,
-    idDone: false,
+    isDone: false,
     content: "React 공부하기",
     createdDate: new Date().getTime(),
   },
   {
     id: 1,
-    idDone: false,
+    isDone: false,
     content: "빨래 널기",
     createdDate: new Date().getTime(),
   },
   {
     id: 2,
-    idDone: false,
+    isDone: false,
     content: "노래 연습",
     createdDate: new Date().getTime(),
   },
@@ -44,7 +44,7 @@ function App() {
     <div className="App">
       <Header />
       <TodoEditor onCreate={onCreate} />
-      <TodoList />
+      <TodoList todo={todo} />
     </div>
   );
 }
