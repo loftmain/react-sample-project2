@@ -1,3 +1,4 @@
+import React from 'react';
 import './Header.css';
 
 const Header = () => {
@@ -6,4 +7,4 @@ const Header = () => {
         <h1>{new Date().toDateString()}</h1>
     </div>
 };
-export default Header;
+export default React.memo(Header);
